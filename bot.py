@@ -24,6 +24,12 @@ async def hello(ctx):
 @bot.command()
 async def heh(ctx, count_heh = 5):
     await ctx.send("he" * count_heh)
+    
+@bot.command()
+async def add(ctx, left: int, right: int):
+    """Adds two numbers together."""
+    await ctx.send(left + right)
+    
 @bot.command()
 async def passw(ctx,panjang = 5):
     await ctx.send(genn_pass(panjang))
